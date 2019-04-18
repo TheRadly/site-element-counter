@@ -1,0 +1,77 @@
+
+{% block content %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/TestTaskColnect/public/css/styles.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="./public/js/index.js"></script>
+
+<title>HTML Element Counter</title>
+
+<div class="mainContainer">
+
+  <div class="titleForm">
+
+    <h2>HTML Element Counter</h2>
+    <img class="ml-4" src="https://i.colnect.net/colnect_sm.png" alt="Colnect">
+
+  </div>
+
+  <div class="searchForm">
+
+      <div class="input-group w-7 mb-3">
+
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="textForInput">Enter website URL for search</span>
+        </div>
+
+        <input type="text" id="urlSearchInput" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        <button type="submit" id="submitButton" class="btn btn-info">Scan</button>
+
+      </div>
+
+  </div>
+
+  <div id="loader" class="hideElement">
+    <img src="./public/img/Eclipse-1s-200px.gif" alt="">
+  </div>
+
+  <div id="searchResult" class="resultContainer hideElement">
+
+    <div class="infoForm mt-5">
+
+      <h5>General Statistic: </h5>
+      <h5>Statistic MySQL: </h5>
+
+    </div>
+
+    <div class="resultForm mt-2">
+
+      <div class="generalStatisticForm mr-5">
+
+        <p id="p_url"></p>
+        <p id="p_fetch"></p>
+        <p id="p_took"></p>
+        <p id="p_img"></p>
+
+      </div>
+
+      <div class="mysqlStatisticForm">
+
+        <p>28 different URLs from colnect.com have been fetched</p>
+        <p>Average fetch time from colnect.com during the last 24 hours hours is 472ms</p>
+        <p>There was a total of 91 &lt;img&gt; elements from colnect.com</p>
+        <p>Total of 1720 &lt;img&gt; elements counted in all requests ever made.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+{% endblock  %}

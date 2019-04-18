@@ -1,0 +1,21 @@
+{
+    "name": "radly/bee-jee-test",
+    "authors": [
+        {
+            "name": "TheRadly",
+            "email": "alex5011999@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.4",
+        "twig/twig": "^2.0",
+      "ext-mysql_xdevapi": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4":{
+            "App\\": "App/"
+        }
+    }
+
+}
