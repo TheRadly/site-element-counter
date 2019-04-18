@@ -1,7 +1,8 @@
 # site-element-counter
-Count HTML <img> elements counter
+HTML &lt;img&gt; elements counter
 
 Techologies:
 - PHP
 - jQuery
 - Twig
+- phpQuery
