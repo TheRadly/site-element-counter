@@ -1,2 +1,7 @@
 # site-element-counter
-Test task from colnect.com
+Count HTML <img> elements counter
+
+Techologies:
+- PHP
+- jQuery
+- Twig
