@@ -14,9 +14,26 @@
     display: none;
 }
 
+.tagForm{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .searchLoader {
+
     display: flex;
     justify-content: center;
+
+}
+
+.w-7{
+    width: 700px;
+}
+
+.w-2{
+    width: 200px;
 }
 
 .titleForm {
@@ -37,22 +54,12 @@
 
 }
 
-.w-7 {
-
-  width: 700px;
-
-}
-
 .resultForm {
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
-}
-
-.generalStatisticForm {
 
 }
 

@@ -1,11 +1,18 @@
 
 {% block content %}
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="/TestTaskColnect/public/css/styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+>
+<link rel="stylesheet" href="./public/css/styles.css">
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous">
+</script>
 <script src="./public/js/index.js"></script>
 
 <title>HTML Element Counter</title>
@@ -24,13 +31,22 @@
       <div class="input-group w-7 mb-3">
 
         <div class="input-group-prepend">
-          <span class="input-group-text" id="textForInput">Enter website URL for search</span>
+          <span class="input-group-text" id="textForInput">Enter website URL to search</span>
         </div>
-
         <input type="text" id="urlSearchInput" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-        <button type="submit" id="submitButton" class="btn btn-info">Scan</button>
 
       </div>
+
+    <div class="input-group w-2 mb-3">
+
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="textForTag">Tag</span>
+      </div>
+      <input type="text" id="tagSearchInput" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-small">
+
+      <button type="submit" id="submitButton" class="btn btn-info">Scan</button>
+
+    </div>
 
   </div>
 
@@ -38,7 +54,7 @@
     <img src="./public/img/Eclipse-1s-200px.gif" alt="">
   </div>
 
-  <div id="searchResult" class="resultContainer hideElement">
+    <div id="searchResult" class="resultContainer hideElement">
 
     <div class="infoForm mt-5">
 
@@ -60,10 +76,10 @@
 
       <div class="mysqlStatisticForm">
 
-        <p>28 different URLs from colnect.com have been fetched</p>
-        <p>Average fetch time from colnect.com during the last 24 hours hours is 472ms</p>
-        <p>There was a total of 91 &lt;img&gt; elements from colnect.com</p>
-        <p>Total of 1720 &lt;img&gt; elements counted in all requests ever made.</p>
+        <p id="p_mySql_countURL"></p>
+        <p id="p_mySql_countDuration"></p>
+        <p id="p_mySql_countElements"></p>
+        <p id="p_mySql_countAllElements"></p>
 
       </div>
 

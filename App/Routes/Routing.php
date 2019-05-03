@@ -6,6 +6,7 @@ return array(
                 '/' => 'HomeController@InitializeMainPage'
             ],
     'post' => [
-                '/' => 'HomeController@ParseURL'
+                '/' => 'HomeController@ParseDataToAJAX'
             ]
-);
+
+); // return array

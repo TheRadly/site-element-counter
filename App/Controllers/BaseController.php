@@ -31,7 +31,7 @@ class BaseController {
         );
 
       } // try
-      catch(PDOException $ex){
+      catch(\PDOException $ex){
           echo "Connection error.\n Info: $ex->getMessage()";
       } // catch
 

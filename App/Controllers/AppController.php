@@ -4,10 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController as BaseController;
 use Bramus\Router\Router;
-use \Twig_Loader_Filesystem;
-use \Twig_Environment;
 
-use App\Utils\MySQL;
 
 class AppController extends BaseController {
 

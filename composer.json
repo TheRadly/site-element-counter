@@ -1,5 +1,5 @@
 {
-    "name": "radly/bee-jee-test",
+    "name": "radly/colnect",
     "authors": [
         {
             "name": "TheRadly",
@@ -9,8 +9,8 @@
     "require": {
         "bramus/router": "~1.4",
         "twig/twig": "^2.0",
-      "ext-mysql_xdevapi": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-pdo": "*"
     },
     "autoload": {
         "psr-4":{
